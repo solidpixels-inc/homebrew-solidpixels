@@ -1,4 +1,4 @@
-# Solid Pixels Homebrew Tap
+# Solidpixels Homebrew Tap
 
 Install Tetra with:
 
