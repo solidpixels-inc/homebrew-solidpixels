@@ -7,20 +7,20 @@ class Tetra < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.0/tetra_Darwin_arm64.tar.gz"
-      sha256 "8594fde7ae366e10000fcf915bffaa36ca7e3af627d6a37211b498d2b9c454e7"
+      sha256 "b4936d1b8c187195d79f4acd7e4936fdae263c0a57e503a9b14dd9740a70a530"
     else
       url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.0/tetra_Darwin_x86_64.tar.gz"
-      sha256 "ac1b5c82ee79c8e62278044ec954c114c2b66b953d5c7afd9746d1d920f68ebb"
+      sha256 "2fdba29813e5149f229073b976d624de0200b0cd6bd712c4f0cd6c56aa8144e8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.0/tetra_Linux_arm64.tar.gz"
-      sha256 "c6af403dccb702d2f2fa9a159a15812b625dc0e33901eb6becaee9fe9edddb5d"
+      sha256 "ea04ac8c7325e072b2dcdb306126fc7bf583d28d2edc31fccc0e9811e478cdc1"
     else
       url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.0/tetra_Linux_x86_64.tar.gz"
-      sha256 "057a4aecbe4bc06994fe9cf953ef0a0f96cb752382c4d00125985afea51b20a9"
+      sha256 "7068fa61746c12d4da8cc27a3692b54fc85e7565b8c7f80eb062c8b340d3a31a"
     end
   end
 
@@ -31,6 +31,6 @@ class Tetra < Formula
   end
 
   test do
-    system "#{bin}/tetra", "--version"
+    system "#{bin}/tetra", "version"
   end
 end
