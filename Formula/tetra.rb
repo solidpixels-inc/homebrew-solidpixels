@@ -1,26 +1,26 @@
 class Tetra < Formula
   desc "App runtime and UX toolkit for pixel-based apps"
   homepage "https://solidpixels.io/products/tetra/"
-  version "0.35.1"
+  version "0.35.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.1/tetra_Darwin_arm64.tar.gz"
-      sha256 "6ff64cf0568676f3ab41b319f7fa5a7d109eed8358eaa96dcdd50bfeeee47d95"
+      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.2/tetra_Darwin_arm64.tar.gz"
+      sha256 "173a18c66a858c08a4fb1aba68ba3ec8397a4896938ebf5fe8b84488da243d0e"
     else
-      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.1/tetra_Darwin_x86_64.tar.gz"
-      sha256 "2203172372f38e0d42f97980de24c67055b1fefeb64ba97554a3c8659fcc2beb"
+      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.2/tetra_Darwin_x86_64.tar.gz"
+      sha256 "8dfe9f0250036165a3387e13b2486c9c2bd0981a93d755cef574288e7210dea6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.1/tetra_Linux_arm64.tar.gz"
-      sha256 "7f15f02f28f2af53edb5a64391e7f5b3d9c8d02e8209ac3ae4f54e1e6e215794"
+      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.2/tetra_Linux_arm64.tar.gz"
+      sha256 "fe94925236ce50e4eaea29efc8e106da662aa97d67b991147a43c225c36ddde5"
     else
-      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.1/tetra_Linux_x86_64.tar.gz"
-      sha256 "f8adb589047fbed852b6fd1be43ffb7e3d610854dd3343b562058243f92475a7"
+      url "https://github.com/solidpixels-inc/tetra-releases/releases/download/v0.35.2/tetra_Linux_x86_64.tar.gz"
+      sha256 "05e2b7eb3dd9f71c6647e3eed63f4e8c270360a715479b85e0d40c4b1b06c552"
     end
   end
 
